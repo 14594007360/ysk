@@ -15,7 +15,7 @@
   	<result property="userType" column="USERTYPE" javaType="java.lang.Integer" jdbcType="INTEGER"/>
   </resultMap>
   
-  <select id="login" parameterMap="userMap" resultType="int">
+  <select id="login" parameterType="com.ysk.vo.User" resultType="int">
   	select count(1) from ysk_user where loginCode = #{loginCode} and password = #{password}
   </select>
   
