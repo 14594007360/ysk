@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404</title>
+	<link rel="stylesheet" href="css/animate.min.css" media="all" />
+	<link rel="stylesheet" href="css/404/err.css" media="all" />
+</head>
+<body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var config = {
+				vx: 4,
+				vy:  4,
+				height: 2,
+				width: 2,
+				count: 100,
+				color: "121, 162, 185",
+				stroke: "100,200,180",
+				dist: 6000,
+				e_dist: 20000,
+				max_conn: 10
+			}
+			CanvasParticle(config);
+		}
+	</script>
+	<p class="animated bounceInLeft">404</p>
+	<div class="animated bounceInLeft">您寻找的页面已翻车</div>
+	<script type="text/javascript" src="js/404/canvas-particle.js"></script>
+</body>
 </html>

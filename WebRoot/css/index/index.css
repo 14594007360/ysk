@@ -1,0 +1,366 @@
+/*头部*/
+header {
+	height: 3.6rem;
+	line-height: 3.6rem;
+}
+
+header nav {
+	background: #FAFAFA;
+	height: 3.6rem;
+}
+
+header nav div div ul li {
+	font-size: 1.1rem;
+	float: left;
+	padding: 0 0.5em;
+}
+
+.flexible {
+	width: 110rem;
+}
+
+.top-left {
+	float: left;
+}
+
+.top-right {
+	float: right;
+}
+
+/*导航span==|*/
+.sep-lines {
+	border-left: 1px solid #dfdfdf;
+}
+
+.qrcode-discount {
+	background: url("img/index/qrcode.ico") no-repeat;
+}
+
+/**********************************************/
+/*主体*/
+/**********************************************/
+.container {
+	height: 10rem;
+	margin-top: 1.5rem;
+}
+
+/**********************************************/
+/*搜索框*/
+/**********************************************/
+.container .searchinput {
+	margin-top: 3rem;
+}
+
+.container .inp-input {
+	height: 1.6rem;
+	line-height: 1.6rem;
+	font-size: 1.6rem;
+	border: 1px solid #dfdfdf;
+	border-right: 0;
+	width: 30rem;
+	padding: 10px 16px 10px 20px;
+	float: left;
+	color: #333;
+	outline: none;
+}
+
+.container .btn-button {
+	border: 1px solid #dfdfdf;
+	width: 6rem;
+	height: 3.4rem;
+	background-color: transparent;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+	outline: none;
+	transition: 0.2s all;
+}
+
+.btn-button:HOVER {
+	background: #ff318c;
+	color: #fff;
+}
+
+/**********************************************/
+/*头部导航*/
+/**********************************************/
+.nav-bar-header {
+	position: relative;
+}
+
+.nav-bar-header nav ul li {
+	float: left;
+	height: 4rem;
+	cursor: pointer;
+	font: 18px/44px 'Microsoft YaHei';
+	color: #fff;
+	padding: 0 1rem;
+	min-width: 8rem;
+	text-align: center;
+	transition: 0.2s all;
+}
+
+.nav-bar-header nav ul li:HOVER {
+	background: #080809;
+}
+
+.nav-bar-header nav ul {
+	background: #313137;
+}
+
+.nav-bar-header nav ul li:FIRST-CHILD {
+	background-color: #007ACC !important;
+	padding: 0 0 0 18px;
+	text-align: left;
+	width: 15rem;
+}
+
+.nav-bar-header nav ul .active {
+	background: #080809;
+}
+
+/**********************************************/
+/*左侧导航*/
+/**********************************************/
+.left-menu {
+	width: 16.5rem;
+	float: left;
+}
+
+.left-menu div {
+	border-bottom: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	background: #f9f9f9;
+	padding: 0 20px;
+	height: 4.6rem;
+	line-height: 4.5rem;
+	overflow: hidden;
+	font-size: 1.6rem;
+	transition: 0.2s all;
+}
+
+.left-menu div:HOVER {
+	background: #fff;
+}
+
+.left-menu div dt {
+	float: left;
+}
+
+.left-menu .sp-sc {
+	float: right;
+	color: #999;
+	font-size: 1rem;
+	margin-left: 0.5rem;
+	text-align: right;
+}
+
+/**********************************************/
+/*细分左侧导航*/
+/**********************************************/
+.hd-type {
+	width: 35rem;
+	height: 28.7rem;
+	position: absolute;
+	padding: 2rem;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	left: 16.5rem;
+	z-index: 9;
+	background: #fff;
+}
+
+.hd-type div ul li {
+	float: left;
+	color: #999;
+	margin-left: 1rem;
+	line-height: 3rem;
+}
+
+.hd-type div hr {
+	margin: 1rem 0;
+}
+
+/**********************************************/
+/*导航广告*/
+/**********************************************/
+.ad {
+	float: left;
+	width: 85%;
+}
+
+/**********************************************/
+/*zg*/
+/**********************************************/
+.timg {
+	margin-top: 3rem;
+}
+
+.Areafirstly {
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.Areafirstly>div {
+	float: left;
+}
+
+.abi {
+	margin-top: 3px;
+}
+
+.i1 img {
+	height: 200px;
+	width: 220px;
+}
+
+.i2 img {
+	height: 110px;
+	width: 220px;
+}
+
+.i3 img {
+	height: 155px;
+	width: 300px;
+}
+
+.i4 img {
+	width: 250px;
+	height: 130px;
+}
+
+.i5 img {
+	width: 250px;
+	height: 180px;
+}
+
+.Areafirstly {
+	line-height: 0 !important;
+}
+
+.Areafirstly>div {
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.Areafirstly div div {
+	border: 1px solid #fff;
+	-webkit-transition: all 1s 100ms;
+}
+
+.Areafirstly div div:hover {
+	border: 1px solid #ff4c34;
+}
+
+.Areaopen {
+	margin-left: 0px !important;
+}
+
+/**********************************************/
+/*zg右侧*/
+/**********************************************/
+.Areaend div {
+	text-decoration: none;
+	border: 0px solid #ccc !important;
+	border-bottom: 1px solid #ccc !important;
+	height: 65px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.Areaend {
+	background-color: #444;
+	text-align: center;
+	padding: 0 10px;
+	height: 315px;
+	width: 285px;
+}
+
+.Areaend .Areaend-end {
+	border-bottom: 0px solid #ccc !important;
+}
+
+.ng-binding {
+	height: 20px;
+	margin-top: 12px;
+	line-height: 30px;
+}
+
+.Areaend h3 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #ccc;
+	-webkit-transition: all 1s 100ms;
+	-moz-transition: all 1s 100ms;
+	transition: all 1s 100ms;
+}
+
+.Areaend h3:HOVER {
+	color: #ff4c34 !important;
+}
+
+.Areaend p {
+	height: 2rem;
+	color: #bbb;
+}
+
+/**********************************************/
+/*内容美食*/
+/**********************************************/
+.center {
+	color: #444;
+	margin-top: 4rem;
+}
+
+.center section div ul li {
+	float: left;
+	font-size: 1.4rem;
+	padding-left: 1rem;
+	color: #767676;
+	line-height: 3rem;
+}
+
+.center section span {
+	font-size: 2rem;
+}
+
+.center .title {
+	width: 5.8rem;
+	line-height: 2rem;
+}
+
+/**********************************************/
+/*底部社区*/
+/**********************************************/
+.community {
+	height: 600px;
+	margin: 0 auto;
+}
+
+.ysq {
+	margin: 3rem 0;
+}
+
+.footcommunity li {
+	float: left;
+	margin-left: 0.54rem;
+}
+
+.footcommunity li:FIRST-CHILD {
+	margin-left: 0;;
+}
+
+.foot {
+	background: #000;
+	line-height: 36px;
+	height: 36px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.foot  a {
+	color: #2a6496;
+}

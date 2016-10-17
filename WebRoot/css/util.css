@@ -116,6 +116,7 @@ a {
 
 a:hover, a:active {
     color: #0ae;
+	cursor: pointer;
 }
 
 .img{
