@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysk.dao.UserDao">
+  <resultMap type="User" id="userMap">
+  	<id property="user_id" column="USER_ID" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+  	<result property="loginCode" column="LOGINCODE" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="password" column="PASSWORD" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="userName" column="USERNAME" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="birthday" column="BIRTHDAY" javaType="java.util.Date" jdbcType="DATE"/>
+  	<result property="idCard" column="IDCARD" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="mobile" column="MOBILE" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="email" column="EMAIL" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="userAddress" column="USERADDRESS" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="createTime" column="CREATETIME" javaType="java.util.Date" jdbcType="DATE"/>
+  	<result property="userType" column="USERTYPE" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+  </resultMap>
+  
+  <select id="login" parameterType="com.ysk.vo.User" resultType="int">
+  	select count(1) from ysk_user where loginCode = #{loginCode} and password = #{password}
+  </select>
+  
+</mapper>
