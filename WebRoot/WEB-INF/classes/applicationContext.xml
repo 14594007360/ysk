@@ -27,39 +27,39 @@
 	</bean>
 	
 	<!-- 获得sqlSessionFactory -->
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource"></property>
+<!-- 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"> -->
+<!-- 		<property name="dataSource" ref="dataSource"></property> -->
 		<!-- 加载MyBatis主配置文件 -->
-		<property name="configLocation" value="classpath:Mybatis-config.xml"></property>
+<!-- 		<property name="configLocation" value="classpath:Mybatis-config.xml"></property> -->
 		<!-- 加载映射文件 -->
-		<property name="mapperLocations" value="classpath:org/ssh/mapper/*.xml"></property>
-	</bean>
+<!-- 		<property name="mapperLocations" value="classpath:org/ssh/mapper/*.xml"></property> -->
+<!-- 	</bean> -->
 	
 	<!-- 实现接口与映射绑定，接口不需要实现 -->
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!-- 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"> -->
 		<!-- 扫描包下所有dao -->
-		<property name="basePackage" value="org.ssm.dao"></property>
-		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-	</bean>
+<!-- 		<property name="basePackage" value="org.ssm.dao"></property> -->
+<!-- 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property> -->
+<!-- 	</bean> -->
 	
-	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" p:dataSource-ref="dataSource"></bean>
+<!-- 	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" p:dataSource-ref="dataSource"></bean> -->
 	<!-- 配置事务规则 -->
-	<tx:advice id="txAdvice" transaction-manager="txManager">
-		<tx:attributes>
+<!-- 	<tx:advice id="txAdvice" transaction-manager="txManager"> -->
+<!-- 		<tx:attributes> -->
 			<!--  以find开头的方法名的规则,一般查询方法才会配置 只读  -->
-			<tx:method name="find*" read-only="true"/>
-			<tx:method name="add*" propagation="REQUIRED"/>
-			<tx:method name="del*" propagation="REQUIRED"/>
-			<tx:method name="update*" propagation="REQUIRED"/>
-			<tx:method name="*" propagation="REQUIRED" read-only="true"/>
-		</tx:attributes>
-	</tx:advice>
+<!-- 			<tx:method name="find*" read-only="true"/> -->
+<!-- 			<tx:method name="add*" propagation="REQUIRED"/> -->
+<!-- 			<tx:method name="del*" propagation="REQUIRED"/> -->
+<!-- 			<tx:method name="update*" propagation="REQUIRED"/> -->
+<!-- 			<tx:method name="*" propagation="REQUIRED" read-only="true"/> -->
+<!-- 		</tx:attributes> -->
+<!-- 	</tx:advice> -->
 	
 	<!--  织入事务增强（AOP）  -->
-	<aop:config>
+<!-- 	<aop:config> -->
 		<!--  配置业务层所有类及方法作为切入点  -->
-		<aop:pointcut expression="execution(* org.leave.service.impl.*.*(..))" id="servicePoint"/>
+<!-- 		<aop:pointcut expression="execution(* org.leave.service.impl.*.*(..))" id="servicePoint"/> -->
 		
-		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePoint"/>
-	</aop:config>
+<!-- 		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePoint"/> -->
+<!-- 	</aop:config> -->
 </beans>
