@@ -26,9 +26,10 @@
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/cssresets.css" media="all" />
+<link rel="stylesheet" href="css/util.css" media="all" />
+<link rel="stylesheet" href="css/normalize.css" media="all" />
 <link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/util.css" media="all" />
 <link rel="stylesheet" href="css/owl.carousel.min.css" />
 <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 <link rel="stylesheet" href="css/index/index.css" media="all" />
@@ -355,8 +356,11 @@
 		<!-- 内容 -->
 		<section class="center">
 			<section class="cen-food clearfix">
-				<div>
-					<div class="title pull-left"><i class="icon-food icon-2x"></i><span class="pull-right">美食</span></div>
+
+				<div class="clearfix">
+					<div class="title pull-left">
+						<i class="icon-food icon-2x"></i><span class="pull-right">美食</span>
+					</div>
 					<ul class="pull-right">
 						<li><a href="#">精选品牌</a></li>
 						<li><span class="sep-lines"></span></li>
@@ -368,14 +372,214 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
 					</ul>
-					
+				</div>
+
+				<div class="items clearfix">
+					<ul class="clearfix">
+						<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+						<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+					</ul>
+					<hr>
+					<ul class="clearfix">
+						<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+						<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+							<li><a href="#">
+								<div>
+									<img src="img/index/sc1.jpg" alt="万象城专区" />
+								</div>
+								<div>
+									<h3>【3店通用】万象城专区</h3>
+									<p>100元代金券！免费wifi!</p>
+								</div>
+						</a> <!-- 一些标签 -->
+							<div class="item-info">
+								<span class="promo promo-p">立减3元</span>
+							</div>
+							<div class="pinfo clearfix">
+								<span class="pay"><span  class="money-f">￥</span>178</span><span class="pay-out">价值￥<span class="out-money">268</span></span>
+							</div>
+							<div class="items-foot clearfix">
+								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
+							</div>
+							</li>
+					</ul>
 				</div>
 			</section>
-			
+
 			<!-- 电影 -->
 			<section class="clearfix">
 				<div>
-					<div class="title pull-left"><i class="icon-facetime-video icon-2x"></i><span class="pull-right">电影</span></div>
+					<div class="title pull-left">
+						<i class="icon-facetime-video icon-2x"></i><span
+							class="pull-right">电影</span>
+					</div>
 					<ul class="pull-right">
 						<li><a href="#">在线订座</a></li>
 						<li><span class="sep-lines"></span></li>
@@ -387,14 +591,16 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
 					</ul>
-					
+
 				</div>
 			</section>
-			
+
 			<!-- 娱乐 -->
 			<section>
 				<div class="clearfix">
-					<div class="title pull-left"><i class="icon-coffee icon-2x"></i><span class="pull-right">娱乐</span></div>
+					<div class="title pull-left">
+						<i class="icon-coffee icon-2x"></i><span class="pull-right">娱乐</span>
+					</div>
 					<ul class="pull-right">
 						<li><a href="#">密室逃脱</a></li>
 						<li><span class="sep-lines"></span></li>
@@ -406,14 +612,16 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
 					</ul>
-					
+
 				</div>
 			</section>
-			
+
 			<!-- 生活 -->
-			<section >
+			<section>
 				<div class="clearfix">
-					<div class="title pull-left"><i class="icon-beer icon-2x"></i><span class="pull-right">生活</span></div>
+					<div class="title pull-left">
+						<i class="icon-beer icon-2x"></i><span class="pull-right">生活</span>
+					</div>
 					<ul class="pull-right">
 						<li><a href="#">配镜</a></li>
 						<li><span class="sep-lines"></span></li>
@@ -425,14 +633,16 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
 					</ul>
-					
+
 				</div>
 			</section>
-			
+
 			<!-- 酒店 -->
 			<section>
 				<div class="clearfix">
-					<div class="title pull-left"><i class="icon-home icon-2x"></i><span class="pull-right">酒店</span></div>
+					<div class="title pull-left">
+						<i class="icon-home icon-2x"></i><span class="pull-right">酒店</span>
+					</div>
 					<ul class="pull-right">
 						<li><a href="#">配镜</a></li>
 						<li><span class="sep-lines"></span></li>
@@ -444,7 +654,7 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
 					</ul>
-					
+
 				</div>
 			</section>
 		</section>

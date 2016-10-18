@@ -36,6 +36,12 @@ header nav div div ul li {
 	background: url("img/index/qrcode.ico") no-repeat;
 }
 
+@media screen and (max-width: 1300px) {
+	.flexible {
+		width: 100%;
+	}
+}
+
 /**********************************************/
 /*主体*/
 /**********************************************/
@@ -98,6 +104,18 @@ header nav div div ul li {
 	min-width: 8rem;
 	text-align: center;
 	transition: 0.2s all;
+}
+
+@media screen and (max-width: 1300px) {
+	.nav-bar-header nav ul li:FIRST-CHILD {
+		display: none;
+	}
+	.left-menu {
+		display: none;
+	}
+	.hd-type {
+		display: none;
+	}
 }
 
 .nav-bar-header nav ul li:HOVER {
@@ -212,28 +230,28 @@ header nav div div ul li {
 }
 
 .i1 img {
-	height: 200px;
-	width: 220px;
+	height: 17em;
+	width: 17.5em;
 }
 
 .i2 img {
-	height: 110px;
-	width: 220px;
+	height: 8em;
+	width: 17.5em;
 }
 
 .i3 img {
-	height: 155px;
-	width: 300px;
+	height: 12.5em;
+	width: 25.5em;
 }
 
 .i4 img {
-	width: 250px;
-	height: 130px;
+	width: 20.5em;
+	height: 10em;
 }
 
 .i5 img {
-	width: 250px;
-	height: 180px;
+	width: 20.5em;
+	height: 15em;
 }
 
 .Areafirstly {
@@ -274,7 +292,7 @@ header nav div div ul li {
 	background-color: #444;
 	text-align: center;
 	padding: 0 10px;
-	height: 315px;
+	height: 310px;
 	width: 285px;
 }
 
@@ -307,14 +325,14 @@ header nav div div ul li {
 }
 
 /**********************************************/
-/*内容美食*/
+/*内容*/
 /**********************************************/
 .center {
 	color: #444;
 	margin-top: 4rem;
 }
 
-.center section div ul li {
+.center section div .pull-right li {
 	float: left;
 	font-size: 1.4rem;
 	padding-left: 1rem;
@@ -322,13 +340,108 @@ header nav div div ul li {
 	line-height: 3rem;
 }
 
-.center section span {
+.center section .title span {
 	font-size: 2rem;
 }
 
 .center .title {
 	width: 5.8rem;
 	line-height: 2rem;
+}
+
+.items ul li {
+	width: 19rem;
+	padding: 1rem;
+	transition: all 1s 50ms;
+	float: left;
+	margin-left: 1.1rem;
+}
+
+.items ul li:FIRST-CHILD {
+	margin-left: 0;
+}
+
+.items ul li:hover {
+	-webkit-box-shadow: 0 1px 10px #ccc;
+	-moz-box-shadow: 0 1px 10px #ccc;
+	box-shadow: 0 1px 10px #ccc;
+}
+
+.items img {
+	width: 19rem;
+}
+
+.items h3 {
+	line-height: 2rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 19rem;
+	font-size: 1.8rem;
+	color: #444;
+}
+
+.items p {
+	margin-top: 0.8rem;
+	height: 3.8rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+	width: 19rem;
+	line-height: 1.3rem;
+}
+
+.promo {
+	display: inline-block;
+	color: #fff;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin-right: 5px;
+	padding: 0 2px;
+	vertical-align: top;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 1.2rem !important;
+}
+
+.promo-p {
+	background: #ff4883;
+}
+
+.promo-y {
+	background: yellow;
+}
+
+.item-info {
+	height: 2rem;
+}
+
+.pinfo .pay {
+	font-size: 2rem;
+	color: #ff4883;
+}
+
+.pinfo .pay-out {
+	font-size: 1.2rem !important;
+	margin-left: 0.8rem;
+}
+
+.pinfo .money-f {
+	font-size: 1.6rem !important;
+}
+
+.pinfo .out-money {
+	text-decoration: line-through;
+}
+
+.items-foot {
+	font-size: 1.2rem;
+}
+
+.items-foot .evaluate {
+	color: #00A1D6;
 }
 
 /**********************************************/
