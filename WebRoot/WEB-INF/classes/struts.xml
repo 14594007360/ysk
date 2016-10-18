@@ -7,7 +7,7 @@
 		</action>
 		
 		<action name="register" class="com.ysk.controller.UserAction" method="register">
-			<result name="success"></result>
+			<result name="success">register-test.jsp</result>
 		</action>
 	</package>
 </struts>    

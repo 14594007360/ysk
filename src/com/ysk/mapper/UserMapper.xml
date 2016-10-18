@@ -20,6 +20,6 @@
   </select>
   
   <insert id="register" parameterType="com.ysk.vo.User">
-  	insert into ysk_user(user_id,logincode,password,createtime,usertype) values(seq_ysk_user.nextval,#{logincode},#{password},sysdate,#{usertype})
+  	insert into ysk_user(user_id,logincode,password,createtime,usertype) values(seq_ysk_user.nextval,#{loginCode},#{password},sysdate,#{userType})
   </insert>
 </mapper>
