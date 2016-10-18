@@ -9,4 +9,10 @@ public interface UserService {
 	 * @return
 	 */
 	public int login(User user);
+	
+	/**
+	 * ×¢²áÓÃ»§
+	 * @param user
+	 */
+	public void register(User user);
 }

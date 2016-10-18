@@ -14,21 +14,46 @@ public class UserAction extends ActionSupport {
 	@Resource
 	private UserService userService;
 	
-	private User user;
+	private User loginUser;
+	private User registerUser;
 	
+	/**
+	 * 登录验证
+	 * @param loginUser
+	 * @return
+	 */
 	public String login(){
 		
-		int result = userService.login(user);
+		int result = userService.login(loginUser);
 		
 		return SUCCESS;
 	}
 
-	public User getUser() {
-		return user;
+	/**
+	 * 注册用户
+	 * @param registerUser
+	 */
+	public String register(){
+		
+		userService.register(registerUser);
+		
+		return SUCCESS;
+	}
+	
+	public User getLoginUser() {
+		return loginUser;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setLoginUser(User loginUser) {
+		this.loginUser = loginUser;
+	}
+
+	public User getRegisterUser() {
+		return registerUser;
+	}
+
+	public void setRegisterUser(User registerUser) {
+		this.registerUser = registerUser;
 	}
 	
 }

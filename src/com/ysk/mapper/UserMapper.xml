@@ -19,4 +19,7 @@
   	select count(1) from ysk_user where loginCode = #{loginCode} and password = #{password}
   </select>
   
+  <insert id="register" parameterType="com.ysk.vo.User">
+  	insert into ysk_user(user_id,logincode,password,createtime,usertype) values(seq_ysk_user.nextval,#{logincode},#{password},sysdate,#{usertype})
+  </insert>
 </mapper>

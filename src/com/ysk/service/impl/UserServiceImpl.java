@@ -22,4 +22,16 @@ public class UserServiceImpl implements UserService {
 		return userDao.login(user);
 	}
 
+	/**
+	 * ×¢²áÓÃ»§
+	 * @param user
+	 */
+	public void register(User user) {
+		try{
+			userDao.register(user);
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}
+
 }

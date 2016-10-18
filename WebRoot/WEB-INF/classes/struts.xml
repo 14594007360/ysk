@@ -5,5 +5,9 @@
 		<action name="login" class="com.ysk.controller.UserAction" method="login">
 			<result name="success">login-test.jsp</result>
 		</action>
+		
+		<action name="register" class="com.ysk.controller.UserAction" method="register">
+			<result name="success"></result>
+		</action>
 	</package>
 </struts>    
