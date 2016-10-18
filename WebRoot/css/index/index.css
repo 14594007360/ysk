@@ -42,6 +42,41 @@ header nav div div ul li {
 	}
 }
 
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+	.flexible {
+		width: 1100px;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.flexible {
+		width: 800px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.flexible {
+		width: 100%;
+	}
+	.top-right ul li:nth-child(10) {
+		display: none;
+	}
+	.top-right ul li:nth-child(11) {
+		display: none;
+	}
+	.top-right ul li:nth-child(12) {
+		display: none;
+	}
+	.top-right ul li:nth-child(13) {
+		display: none;
+	}
+	.top-right ul li:nth-child(14) {
+		display: none;
+	}
+	.top-right ul li:last-child {
+		display: none;
+	}
+}
 /**********************************************/
 /*主体*/
 /**********************************************/
@@ -87,6 +122,21 @@ header nav div div ul li {
 	color: #fff;
 }
 
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.logo {
+		display: none;
+	}
+	.searchinput {
+		margin: 0 auto;
+	}
+	.container .searchinput {
+		width: 470px;
+		float: none !important;
+	}
+	.container {
+		margin-top: 0;
+	}
+}
 /**********************************************/
 /*头部导航*/
 /**********************************************/
@@ -97,25 +147,15 @@ header nav div div ul li {
 .nav-bar-header nav ul li {
 	float: left;
 	height: 4rem;
+	line-height: 4rem;
 	cursor: pointer;
-	font: 18px/44px 'Microsoft YaHei';
+	font-size: 1.8rem;
 	color: #fff;
 	padding: 0 1rem;
-	min-width: 8rem;
+	width: 8%;
 	text-align: center;
 	transition: 0.2s all;
-}
-
-@media screen and (max-width: 1300px) {
-	.nav-bar-header nav ul li:FIRST-CHILD {
-		display: none;
-	}
-	.left-menu {
-		display: none;
-	}
-	.hd-type {
-		display: none;
-	}
+	cursor: pointer;
 }
 
 .nav-bar-header nav ul li:HOVER {
@@ -130,18 +170,42 @@ header nav div div ul li {
 	background-color: #007ACC !important;
 	padding: 0 0 0 18px;
 	text-align: left;
-	width: 15rem;
+	width: 13.4%;
 }
 
 .nav-bar-header nav ul .active {
 	background: #080809;
 }
 
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+	.nav-bar-header nav ul li {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.nav-bar-header nav ul li {
+		font-size: 1.55rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.nav-bar-header nav ul li:FIRST-CHILD {
+		display: none;
+	}
+	.nav-bar-header nav ul li {
+		font: 1.54rem 'Microsoft YaHei';
+		line-height: 4rem;
+	}
+	.left-menu {
+		display: none;
+	}
+}
 /**********************************************/
 /*左侧导航*/
 /**********************************************/
 .left-menu {
-	width: 16.5rem;
+	width: 15%;
 	float: left;
 }
 
@@ -150,9 +214,9 @@ header nav div div ul li {
 	border-right: 1px solid #dfdfdf;
 	border-left: 1px solid #dfdfdf;
 	background: #f9f9f9;
-	padding: 0 20px;
+	padding: 0 10%;
 	height: 4.6rem;
-	line-height: 4.5rem;
+	line-height: 4.8rem;
 	overflow: hidden;
 	font-size: 1.6rem;
 	transition: 0.2s all;
@@ -174,6 +238,21 @@ header nav div div ul li {
 	text-align: right;
 }
 
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+	.left-menu div {
+		height: 3.82rem;
+		line-height: 3.82rem;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.left-menu div {
+		height: 2.75rem;
+		line-height: 2.75rem;
+		font-size: 1.4rem;
+	}
+}
 /**********************************************/
 /*细分左侧导航*/
 /**********************************************/
@@ -185,7 +264,7 @@ header nav div div ul li {
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	overflow: hidden;
-	left: 16.5rem;
+	left: 14.8%;
 	z-index: 9;
 	background: #fff;
 }
@@ -201,6 +280,32 @@ header nav div div ul li {
 	margin: 1rem 0;
 }
 
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+	.hd-type {
+		height: 23.2rem;
+		line-height: 1rem;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.hd-type {
+		height: 17.7rem;
+		line-height: 0.5rem;
+		padding: 1rem;
+	}
+	.hd-type div ul li {
+		line-height: 2rem;
+	}
+	.foot-item h3 {
+		margin: 0.5rem 0;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.hd-type {
+		display: none;
+	}
+}
 /**********************************************/
 /*导航广告*/
 /**********************************************/
@@ -209,9 +314,16 @@ header nav div div ul li {
 	width: 85%;
 }
 
-/**********************************************/
-/*zg*/
-/**********************************************/
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.ad {
+		width: 100%;
+	}
+}
+
+* /
+	/**********************************************/
+	/*zg*/
+	/**********************************************/   
 .timg {
 	margin-top: 3rem;
 }
@@ -231,26 +343,26 @@ header nav div div ul li {
 
 .i1 img {
 	height: 17em;
-	width: 17.5em;
+	width: 100%;
 }
 
 .i2 img {
 	height: 8em;
-	width: 17.5em;
+	width: 100%;
 }
 
 .i3 img {
 	height: 12.5em;
-	width: 25.5em;
+	width: 100%;
 }
 
 .i4 img {
-	width: 20.5em;
+	width: 100%;
 	height: 10em;
 }
 
 .i5 img {
-	width: 20.5em;
+	width: 100%;
 	height: 15em;
 }
 
@@ -272,8 +384,13 @@ header nav div div ul li {
 	border: 1px solid #ff4c34;
 }
 
+.Areafirstly>div {
+	width: 19%;
+}
+
 .Areaopen {
 	margin-left: 0px !important;
+	width: 20%;
 }
 
 /**********************************************/
@@ -284,7 +401,7 @@ header nav div div ul li {
 	border: 0px solid #ccc !important;
 	border-bottom: 1px solid #ccc !important;
 	height: 65px;
-	width: 250px;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -292,8 +409,8 @@ header nav div div ul li {
 	background-color: #444;
 	text-align: center;
 	padding: 0 10px;
-	height: 310px;
-	width: 285px;
+	height: 25.5rem;
+	width: 22%;
 }
 
 .Areaend .Areaend-end {
@@ -324,6 +441,12 @@ header nav div div ul li {
 	color: #bbb;
 }
 
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.dg {
+		display: none;
+	}
+}
+
 /**********************************************/
 /*内容*/
 /**********************************************/
@@ -340,6 +463,14 @@ header nav div div ul li {
 	line-height: 3rem;
 }
 
+.center section div .pull-right {
+	margin-right: 1%;
+}
+
+.center section .title {
+	margin-left: 1%;
+}
+
 .center section .title span {
 	font-size: 2rem;
 }
@@ -350,14 +481,14 @@ header nav div div ul li {
 }
 
 .items ul li {
-	width: 19rem;
-	padding: 1rem;
+	width: 17.3%;
+	padding: 0.9%;
 	transition: all 1s 50ms;
 	float: left;
-	margin-left: 1.1rem;
+	margin-left: 0.9%;
 }
 
-.items ul li:FIRST-CHILD {
+.items .fist {
 	margin-left: 0;
 }
 
@@ -368,7 +499,7 @@ header nav div div ul li {
 }
 
 .items img {
-	width: 19rem;
+	width: 100%;
 }
 
 .items h3 {
@@ -377,7 +508,7 @@ header nav div div ul li {
 	white-space: nowrap;
 	overflow: hidden;
 	display: block;
-	width: 19rem;
+	width: 100%;
 	font-size: 1.8rem;
 	color: #444;
 }
@@ -390,6 +521,12 @@ header nav div div ul li {
 	display: block;
 	width: 19rem;
 	line-height: 1.3rem;
+}
+
+.li-hr {
+	width: 100% !important;
+	margin: 0;
+	padding: 0 !important;
 }
 
 .promo {
@@ -444,12 +581,42 @@ header nav div div ul li {
 	color: #00A1D6;
 }
 
-/**********************************************/
-/*底部社区*/
-/**********************************************/
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.items h3 {
+		line-height: 2rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		font-size: 1.5rem;
+		color: #444;
+	}
+	.pinfo .pay {
+		font-size: 1.6rem;
+	}
+	.timg {
+		width: 30%;
+	}
+	.ysq img {
+		width: 10%;
+	}
+	.center section .title span {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	
+}
+
+* /
+	/**********************************************/
+	/*底部社区*/
+	/**********************************************/              
 .community {
-	height: 600px;
 	margin: 0 auto;
+	margin-bottom: 2rem;
 }
 
 .ysq {
@@ -458,13 +625,25 @@ header nav div div ul li {
 
 .footcommunity li {
 	float: left;
-	margin-left: 0.54rem;
+	margin-left: 2.65%;;
+	width: 23%;
+}
+
+.footcommunity li img {
+	width: 100%;
 }
 
 .footcommunity li:FIRST-CHILD {
 	margin-left: 0;;
 }
 
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.ysq img {
+		width: 10%;
+	}
+}
+
+/***************************************/
 .foot {
 	background: #000;
 	line-height: 36px;
@@ -476,4 +655,16 @@ header nav div div ul li {
 
 .foot  a {
 	color: #2a6496;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.foot {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	.foot {
+		font-size: 1rem;
+	}
 }

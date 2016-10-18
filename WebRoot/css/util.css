@@ -7,7 +7,7 @@
     基本默认值
    ============ */
 html {
-    font-size: 62.5%;
+    font-size: 62.5% !important;
     color: #222;
 }
 

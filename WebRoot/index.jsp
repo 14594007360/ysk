@@ -25,9 +25,9 @@
     -->
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/cssresets.css" media="all" />
+<link rel="stylesheet" href="css/cssresets.css" media="all" /> 
+<!-- <link rel="stylesheet" href="css/normalize.css" media="all" />-->
 <link rel="stylesheet" href="css/util.css" media="all" />
-<link rel="stylesheet" href="css/normalize.css" media="all" />
 <link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -79,7 +79,7 @@
 	<div class="flexible center-block">
 		<div class="container clearfix">
 			<!-- 搜索 -->
-			<div class="pull-left">
+			<div class="pull-left logo">
 				<img src="img/index/logo.png" height="90" />
 			</div>
 			<div class="pull-right searchinput">
@@ -283,7 +283,7 @@
 		</div>
 
 		<!-- dg -->
-		<section class="center-block clearfix">
+		<section class="center-block clearfix dg">
 			<img src="img/index/recommend.png" class="timg center-block" />
 			<!--------------------------------------------------------------------------------------------------------------------------------->
 			<div class="Areafirstly">
@@ -376,7 +376,7 @@
 
 				<div class="items clearfix">
 					<ul class="clearfix">
-						<li><a href="#">
+						<li class="fist"><a href="#">
 								<div>
 									<img src="img/index/sc1.jpg" alt="万象城专区" />
 								</div>
@@ -471,10 +471,12 @@
 								<span class="pull-lift evaluate">4.5分</span><span class="pull-right">已售1018</span>
 							</div>
 							</li>
-					</ul>
-					<hr>
-					<ul class="clearfix">
-						<li><a href="#">
+							
+							<li class="li-hr">
+								<hr>
+							</li>
+							
+							<li class="fist"><a href="#">
 								<div>
 									<img src="img/index/sc1.jpg" alt="万象城专区" />
 								</div>
