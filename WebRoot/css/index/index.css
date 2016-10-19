@@ -33,7 +33,7 @@ header nav div div ul li {
 }
 
 .qrcode-discount {
-	background: url("img/index/qrcode.ico") no-repeat;
+	background: url("../../img/index/qrcode.ico") no-repeat;
 }
 
 @media screen and (max-width: 1300px) {
@@ -54,7 +54,7 @@ header nav div div ul li {
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.flexible {
 		width: 100%;
 	}
@@ -74,6 +74,15 @@ header nav div div ul li {
 		display: none;
 	}
 	.top-right ul li:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.top-right ul li:nth-child(4) {
+		display: none;
+	}
+	.top-right ul li:nth-child(5) {
 		display: none;
 	}
 }
@@ -122,7 +131,7 @@ header nav div div ul li {
 	color: #fff;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.logo {
 		display: none;
 	}
@@ -135,6 +144,20 @@ header nav div div ul li {
 	}
 	.container {
 		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.container .searchinput {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	.container .inp-input {
+		width: 70%;
+	}
+	.container .btn-button {
+		width: 20%;
 	}
 }
 /**********************************************/
@@ -155,7 +178,6 @@ header nav div div ul li {
 	width: 8%;
 	text-align: center;
 	transition: 0.2s all;
-	cursor: pointer;
 }
 
 .nav-bar-header nav ul li:HOVER {
@@ -189,7 +211,7 @@ header nav div div ul li {
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.nav-bar-header nav ul li:FIRST-CHILD {
 		display: none;
 	}
@@ -199,6 +221,9 @@ header nav div div ul li {
 	}
 	.left-menu {
 		display: none;
+	}
+	.nav-bar-header nav ul li {
+		width: 12%;
 	}
 }
 /**********************************************/
@@ -301,7 +326,7 @@ header nav div div ul li {
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.hd-type {
 		display: none;
 	}
@@ -314,7 +339,7 @@ header nav div div ul li {
 	width: 85%;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.ad {
 		width: 100%;
 	}
@@ -323,7 +348,8 @@ header nav div div ul li {
 * /
 	/**********************************************/
 	/*zg*/
-	/**********************************************/   
+	/**********************************************/         
+	                       
 .timg {
 	margin-top: 3rem;
 }
@@ -371,7 +397,7 @@ header nav div div ul li {
 }
 
 .Areafirstly>div {
-	margin-left: 3px;
+	margin-left: 0.5%;
 	cursor: pointer;
 }
 
@@ -419,7 +445,7 @@ header nav div div ul li {
 
 .ng-binding {
 	height: 20px;
-	margin-top: 12px;
+	margin-top: 10px;
 	line-height: 30px;
 }
 
@@ -441,9 +467,72 @@ header nav div div ul li {
 	color: #bbb;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+	.dg>img {
+		display: none;
+	}
+	.ng-binding {
+		line-height: 25px;
+	}
+	.Areaend {
+		display: none;
+	}
 	.dg {
 		display: none;
+	}
+	.Areafirstly>div {
+		width: 24.6%;
+	}
+}
+
+/**********************************************/
+/*>800显示的导航*/
+/**********************************************/
+.nav-l {
+	height: 10rem;
+	padding: 2rem 0;
+	display: none;
+}
+
+.nav-l>div {
+	width: 16%;
+	height: 100%;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+	background: #0078D7;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.nav-l>div>div {
+	height: 70px;
+	margin-top: 25px;
+}
+
+.nav-l>div>div>div {
+	margin: 0 auto;
+}
+
+.nav-l>div:nth-child(2) {
+	width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+	.nav-l {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.nav-l {
+		height: 6rem;
+	}
+	.nav-l>div>div {
+		height: 50px;
+		margin-top: 15px;
+		font-size: 1.4rem;
 	}
 }
 
@@ -606,14 +695,44 @@ header nav div div ul li {
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
-	
+@media screen and (max-width: 800px) {
+	.items .li-hr {
+		display: none;
+	}
+	.items ul li {
+		width: 30.9%;
+	}
+	.items h3 {
+		font-size: 1.4rem;
+	}
+	.items ul li:nth-child(4n) {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.items h3 {
+		font-size: 1.2rem;
+	}
+	.center section div .pull-right li {
+		font-size: 1.2rem;
+	}
+	.items ul li {
+		width: 47.7%;
+	}
+	.center section .title span {
+		font-size: 1.4rem;
+	}
+	.center .title {
+		width: 4.6rem;
+	}
 }
 
 * /
 	/**********************************************/
 	/*底部社区*/
-	/**********************************************/              
+	/**********************************************/                    
+	                       
 .community {
 	margin: 0 auto;
 	margin-bottom: 2rem;
@@ -637,12 +756,36 @@ header nav div div ul li {
 	margin-left: 0;;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+.footcommunity li img:nth-child(2) {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
 	.ysq img {
 		width: 10%;
 	}
 }
 
+@media screen and (max-width: 30em) {
+	.footcommunity li {
+		float: left;
+		margin-left: 2.65%;
+		width: 48.6%;
+	}
+	.footcommunity li:nth-child(3) {
+		margin-left: 0;
+	}
+	.footcommunity li img:nth-child(1) {
+		display: none;
+	}
+	.footcommunity li img:nth-child(2) {
+		margin: 0.5rem 0;
+		display: block;
+	}
+	.ysq img {
+		width: 20%;
+	}
+}
 /***************************************/
 .foot {
 	background: #000;
@@ -663,7 +806,7 @@ header nav div div ul li {
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.foot {
 		font-size: 1rem;
 	}
