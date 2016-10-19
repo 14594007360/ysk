@@ -1,0 +1,147 @@
+/*Í·²¿*/
+header {
+	line-height: 3.6rem;
+	background: #fff;
+	border-bottom: 1px solid #e3e3e3;
+	box-shadow: 0 0 2px #E3E3E3;
+}
+
+body {
+	background: #FAFAFA;
+}
+
+.logo-a {
+	width: 14rem;
+}
+
+.logo {
+	margin: 1.1rem 0;
+	width: 100%;
+}
+
+.sep-line {
+	height: 100%;
+	border-left: 2px solid gray;
+	margin: 1rem;
+}
+
+.logo-zc {
+	float: left;
+	padding: 45px 0 0 10px;
+	font-size: 3rem;
+	color: gray;
+	font-weight: 100;
+	font-family: Microsoft YaHei, Hiragino Sans GB, \5b8b\4f53;
+}
+
+header nav {
+	height: 7rem;
+}
+
+header nav div div ul li {
+	font-size: 1.4rem;
+	float: left;
+	padding: 0 0.6em;
+}
+
+.flexible {
+	width: 110rem;
+}
+
+.top-left {
+	float: left;
+}
+
+.top-right {
+	line-height: 108px;
+	float: right;
+	height: 108px;
+}
+
+/*µ¼º½span==|*/
+.sep-lines {
+	border-left: 2px solid #dfdfdf;
+}
+
+.qrcode-discount {
+	background: url("../img/index/qrcode.ico") no-repeat;
+	position: absolute;
+	width: 80px;
+}
+
+@media screen and (max-width: 1300px) {
+	.flexible {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+	.flexible {
+		width: 1100px;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.flexible {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.flexible {
+		width: 100%;
+	}
+	.top-right ul li:nth-child(10) {
+		display: none;
+	}
+	.top-right ul li:nth-child(11) {
+		display: none;
+	}
+	.top-right ul li:nth-child(12) {
+		display: none;
+	}
+	.top-right ul li:nth-child(13) {
+		display: none;
+	}
+	.top-right ul li:nth-child(14) {
+		display: none;
+	}
+	.top-right ul li:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.top-right ul li:nth-child(4) {
+		display: none;
+	}
+	.top-right ul li:nth-child(5) {
+		display: none;
+	}
+}
+
+/***************************************/
+.foot {
+	background: #000;
+	line-height: 36px;
+	height: 36px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.foot  a {
+	color: #2a6496;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+	.foot {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.foot {
+		font-size: 1rem;
+	}
+}

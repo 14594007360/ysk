@@ -14,7 +14,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport"
 	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>首页</title>
+<title>首页 - Booking</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css" />
 <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+<link rel="stylesheet" href="css/top-footer.css" media="all" />
 <link rel="stylesheet" href="css/index/index.css" media="all" />
 </head>
 
@@ -60,7 +61,7 @@
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">手机Booking</a>
 							<p>
-								<a href="#" alt="手机booking二维码" class="img qrcode-discount hide"></a>
+								<a href="#" alt="手机booking二维码" class="img qrcode-discount "></a>
 							</p></li>
 						<li><span class="sep-lines"></span></li>
 						<li><a href="#">我的预订</a></li>
