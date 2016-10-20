@@ -7,8 +7,12 @@
     基本默认值
    ============ */
 html {
-    font-size: 62.5%;
+    font-size: 62.5% !important;
     color: #222;
+}
+
+input{
+	outline: none;
 }
 
 /*选中文字背景颜色*/
@@ -108,7 +112,6 @@ li {
     自定义页面样式
    ============ */
 body {
-    font-size: 1.2rem;
     line-height: 1.5;
     background-color: #fff;
 }
