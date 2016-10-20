@@ -11,6 +11,10 @@ html {
     color: #222;
 }
 
+input{
+	outline: none;
+}
+
 /*选中文字背景颜色*/
 ::selection {
     background-color: #b3d4fc;
