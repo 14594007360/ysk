@@ -15,4 +15,10 @@ public interface UserDao {
 	 * @param user
 	 */
 	public void register(User user);
+	
+	/**
+	 * 更新用户信息
+	 * @param user
+	 */
+	public void updateUser(User user);
 }

@@ -34,4 +34,16 @@ public class UserServiceImpl implements UserService {
 		}
 	}
 
+	/**
+	 * 更新用户信息
+	 * @param user
+	 */
+	public void updateUser(User user){
+		try{
+			userDao.updateUser(user);
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}
+	
 }

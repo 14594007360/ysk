@@ -9,5 +9,14 @@
 		<action name="register" class="com.ysk.controller.UserAction" method="register">
 			<result name="success">register-test.jsp</result>
 		</action>
+		
+		<action name="updateUser" class="com.ysk.controller.UserAction" method="updateUser">
+			<result name="success">test.jsp</result>
+		</action>
+		
+		
+		<action name="getType" class="com.ysk.controller.TypeAction" method="queryAllType">
+			<result name="success">type-test.jsp</result>
+		</action>
 	</package>
 </struts>    

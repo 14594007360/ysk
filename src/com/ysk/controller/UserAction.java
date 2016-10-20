@@ -14,8 +14,9 @@ public class UserAction extends ActionSupport {
 	@Resource
 	private UserService userService;
 	
-	private User loginUser;
-	private User registerUser;
+	private User loginUser;				//登录用户
+	private User registerUser;			//注册用户
+	private User updateUser;			//修改用户
 	
 	/**
 	 * 登录验证
@@ -40,6 +41,17 @@ public class UserAction extends ActionSupport {
 		return SUCCESS;
 	}
 	
+	/**
+	 * 注册用户
+	 * @param updateUser
+	 */
+	public String updateUser(){
+		
+		userService.updateUser(updateUser);
+		
+		return SUCCESS;
+	}
+	
 	public User getLoginUser() {
 		return loginUser;
 	}
@@ -54,6 +66,14 @@ public class UserAction extends ActionSupport {
 
 	public void setRegisterUser(User registerUser) {
 		this.registerUser = registerUser;
+	}
+
+	public User getUpdateUser() {
+		return updateUser;
+	}
+
+	public void setUpdateUser(User updateUser) {
+		this.updateUser = updateUser;
 	}
 	
 }

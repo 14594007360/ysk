@@ -22,4 +22,8 @@
   <insert id="register" parameterType="com.ysk.vo.User">
   	insert into ysk_user(user_id,logincode,password,createtime,usertype) values(seq_ysk_user.nextval,#{loginCode},#{password},sysdate,#{userType})
   </insert>
+  
+  <update id="updateUser" parameterType="com.ysk.vo.User">
+  	update ysk_user set password = #{password},userName = #{userName},birthday = #{birthday,javaType=java.util.Date,jdbcType=DATE},idCard = #{idCard},mobile = #{mobile},email = #{email},userAddress = #{userAddress} where user_id = #{user_id}
+  </update>
 </mapper>
