@@ -58,10 +58,54 @@
 			</ul>
 		</div>
 	</div>
-	</nav>
-	 </header>
+	</nav> </header>
 
-	<section> </section>
+	<section class="content center-block">
+	<form action="">
+		<div class="regline clearfix">
+			<div class="reg">手机号码/邮箱：</div>
+			<div class="line">
+				<input type="text" placeholder="请输入常用的手机号或邮箱" />
+			</div>
+			<div class="alter">
+				<i class="icon-remove"></i><span>请输入正确的邮箱或密码</span>
+			</div>
+			<div class="alter-ok">
+				<i class="icon-ok"></i>
+			</div>
+		</div>
+		<div class="regline clearfix">
+			<div class="reg">验证码：</div>
+			<div class="code">
+				<input type="text" placeholder="请输入4位验证码" />
+			</div>
+			<div class="getcode">
+				<input type="button" value="获取验证码">
+			</div>
+		</div>
+		<div class="regline clearfix">
+			<div class="reg">密码：</div>
+			<div class="line">
+				<input type="text" placeholder="密码区分大小写" />
+			</div>
+			<div class="alter">
+				<i class="icon-remove"></i><span>请输入6-18位密码数字或字母</span>
+			</div>
+			<div class="alter-ok">
+				<i class="icon-ok"></i>
+			</div>
+		</div>
+		<div class="regline clearfix btn-sub">
+			<div class="btn-submit pull-right">
+				<input type="submit" value="注 册">
+			</div>
+		</div>
+		<div class="regline-text">
+			<a href="#">已有账号，直接登录</a>
+		</div>
+
+	</form>
+	</section>
 
 	<!-----------底部------------------------>
 	<footer class="foot">

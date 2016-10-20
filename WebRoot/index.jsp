@@ -722,10 +722,14 @@
 			<div class="clearfix">
 				<div>
 					<ul class="footcommunity">
-						<li><img src="img/index/fot4.jpg" /><img src="img/index/fot4-l.jpg" /></li>
-						<li><img src="img/index/fot2.jpg" /><img src="img/index/fot2-l.jpg" /></li>
-						<li><img src="img/index/fot3.jpg" /><img src="img/index/fot3-l.jpg" /></li>
-						<li><img src="img/index/fot1.jpg" /><img src="img/index/fot1-l.jpg" /></li>
+						<li><img src="img/index/fot4.jpg" /><img
+							src="img/index/fot4-l.jpg" /></li>
+						<li><img src="img/index/fot2.jpg" /><img
+							src="img/index/fot2-l.jpg" /></li>
+						<li><img src="img/index/fot3.jpg" /><img
+							src="img/index/fot3-l.jpg" /></li>
+						<li><img src="img/index/fot1.jpg" /><img
+							src="img/index/fot1-l.jpg" /></li>
 					</ul>
 				</div>
 			</div>
