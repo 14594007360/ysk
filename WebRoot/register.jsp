@@ -28,7 +28,9 @@
 <link rel="stylesheet" href="css/normalize.css" media="all" />
 <link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/util.css" media="all" />
+<link rel="stylesheet" href="css/register/jq22.css" media="all" />
 <link rel="stylesheet" href="css/register/register.css">
 
 </head>
@@ -47,7 +49,7 @@
 				class="sep-line pull-left"></span><span class="logo-zc">注册</span>
 		</div>
 		<div class="top-right">
-			<ul>
+			<ul class="clearfix">
 				<li><a href="#">登录</a></li>
 				<li><span class="sep-lines"></span></li>
 				<li><a href="#">注册</a></li>
@@ -61,23 +63,30 @@
 	</nav> </header>
 
 	<section class="content center-block">
+	<div class="centent-logo">
+		<a href="#" class="pull-left logo-a"><img alt="ysklogp logo"
+			src="img/index/logo.png" class="logo"></a><span
+			class="sep-line pull-left"></span><span class="logo-zc">注册</span>
+	</div>
 	<form action="">
 		<div class="regline clearfix">
 			<div class="reg">手机号码/邮箱：</div>
 			<div class="line">
-				<input type="text" placeholder="请输入常用的手机号或邮箱" />
+				<input type="text" class="inputElem" placeholder="请输入常用的手机号或邮箱"
+					id="email" />
 			</div>
-			<div class="alter">
-				<i class="icon-remove"></i><span>请输入正确的邮箱或密码</span>
-			</div>
-			<div class="alter-ok">
+			<div class="alter-ok hide" id="alter-email-ok">
 				<i class="icon-ok"></i>
 			</div>
+			<div class="alter hide" id="alter-email">
+				<i class="icon-remove"></i><span>请输入正确的邮箱或手机号码</span>
+			</div>
+
 		</div>
 		<div class="regline clearfix">
 			<div class="reg">验证码：</div>
 			<div class="code">
-				<input type="text" placeholder="请输入4位验证码" />
+				<input type="text" placeholder="请输入4位验证码" id="code" />
 			</div>
 			<div class="getcode">
 				<input type="button" value="获取验证码">
@@ -86,18 +95,18 @@
 		<div class="regline clearfix">
 			<div class="reg">密码：</div>
 			<div class="line">
-				<input type="text" placeholder="密码区分大小写" />
+				<input type="password" placeholder="密码区分大小写" id="password" />
 			</div>
-			<div class="alter">
-				<i class="icon-remove"></i><span>请输入6-18位密码数字或字母</span>
-			</div>
-			<div class="alter-ok">
+			<div class="alter-ok hide" id="alter-password-ok">
 				<i class="icon-ok"></i>
+			</div>
+			<div class="alter hide" id="alter-password">
+				<i class="icon-remove"></i><span>请输入6-18位密码数字或字母</span>
 			</div>
 		</div>
 		<div class="regline clearfix btn-sub">
-			<div class="btn-submit pull-right">
-				<input type="submit" value="注 册">
+			<div class="btn-submit">
+				<input type="button" value="注 册" id="btnsubmit">
 			</div>
 		</div>
 		<div class="regline-text">
@@ -109,10 +118,52 @@
 
 	<!-----------底部------------------------>
 	<footer class="foot">
+	<div class="center-block clearfix">
+		<div class="foot-nav clearfix">
+			<ul>
+				<li>Community</li>
+				<li>Help Transtate</li>
+				<li>Submit an lssue</li>
+				<li>join our chat</li>
+				<li>CLA</li>
+			</ul>
+
+			<ul>
+				<li>Network</li>
+				<li>Gethub repo</li>
+				<li>User fonums</li>
+			</ul>
+			
+			<ul>
+				<li>Community</li>
+				<li>Help Transtate</li>
+				<li>Submit an lssue</li>
+				<li>join our chat</li>
+				<li>CLA</li>
+			</ul>
+
+			<ul>
+				<li>Network</li>
+				<li>Gethub repo</li>
+				<li>User fonums</li>
+			</ul>
+
+			<ul class="pull-right footer-logo-div">
+				<li><img alt="ysklogp logo" src="img/index/logo.png" class="footer-logo"></li>
+			</ul>
+		</div>
+	</div>
 	<p>
 		&copy; 2016 Company, YSK. &middot; <a href="#">关于我们</a> &middot; <a
 			href="#">反馈意见</a>
 	</p>
 	</footer>
+
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/emailAutoComplete.js"></script>
+	<script src="js/tipso.min.js"></script>
+	<script src="js/register.js" charset="utf-8"></script>
+
 </body>
 </html>

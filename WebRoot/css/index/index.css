@@ -638,6 +638,9 @@
 	.center .title {
 		width: 4.6rem;
 	}
+	.items ul li:last-child {
+		margin-left: 0;
+	}
 }
 
 * /
