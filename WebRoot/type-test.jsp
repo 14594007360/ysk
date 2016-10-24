@@ -25,10 +25,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<table>
-	    <s:iterator value="%{typeList}" id="type">
+	    <s:iterator value="%{typeList}" id="type" status="count">
 	    	<tr>
 	    		<td><s:property value="%{#type.type_name}"/></td>
-	    		<s:property value="%{#type.childs[0].affis[4].affi_name}"/>
+	    		<s:property value="%{#type.childs[#count.getIndex()].affis[4].affi_name}"/>
 	    	</tr>
 	    	<tr>
 	    		<s:iterator value="%{#type.childs}" id="childType">

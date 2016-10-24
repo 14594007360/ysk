@@ -14,6 +14,7 @@
   	<result property="res_endTime" column="RES_ENDTIME" javaType="java.util.Date" jdbcType="DATE"/>
   	<result property="res_realPrice" column="RES_REALPRICE" javaType="java.lang.Double" jdbcType="DOUBLE"/>
   	<result property="res_picPath" column="RES_PICPATH" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="res_telephone" column="RES_TELEPHONE" javaType="java.lang.Integer" jdbcType="INTEGER"/>
   </resultMap>
   
   <select id="queryAllReser" resultMap="reserMap">

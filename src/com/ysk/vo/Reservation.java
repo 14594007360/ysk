@@ -20,6 +20,7 @@ public class Reservation {
 	private Date res_endTime;		//预订结束时间
 	private Double res_realPrice;	//预订优惠价
 	private String res_picPath;		//图片路径
+	private Integer res_telephone;  //联系电话
 	
 	
 	/**
@@ -29,10 +30,14 @@ public class Reservation {
 	
 	}
 	
+	
+
 	public Reservation(Integer res_id, String res_name, String res_explain,
 			Double res_price, Integer res_num, Integer res_typeId,
 			Integer res_state, String res_address, Date res_startTime,
-			Date res_endTime, Double res_realPrice, String res_picPath) {
+			Date res_endTime, Double res_realPrice, String res_picPath,
+			Integer res_telephone) {
+		super();
 		this.res_id = res_id;
 		this.res_name = res_name;
 		this.res_explain = res_explain;
@@ -45,15 +50,27 @@ public class Reservation {
 		this.res_endTime = res_endTime;
 		this.res_realPrice = res_realPrice;
 		this.res_picPath = res_picPath;
+		this.res_telephone = res_telephone;
 	}
+
+
 
 	/**
 	 * getter,setter 方法
 	 * @return
 	 */
+	
 	public Integer getRes_id() {
 		return res_id;
 	}
+	public Integer getRes_telephone() {
+		return res_telephone;
+	}
+
+	public void setRes_telephone(Integer res_telephone) {
+		this.res_telephone = res_telephone;
+	}
+
 	public void setRes_id(Integer res_id) {
 		this.res_id = res_id;
 	}
