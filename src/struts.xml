@@ -25,5 +25,12 @@
 		<action name="getType" class="com.ysk.controller.TypeAction" method="queryAllType">
 			<result name="success">index.jsp</result>
 		</action>
+		
+		<action name="email_*" class="com.ysk.controller.EmailAction" method="{1}">
+			<result name="ajax-success" type="stream">
+				 <param name="contentType">text/html</param>
+		         <param name="inputName">inputStream</param>
+			</result>
+		</action>
 	</package>
 </struts>    
