@@ -20,6 +20,9 @@
 			<result name="success">index.jsp</result>
 		</action>
 		
+		<action name="searchReser" class="com.ysk.controller.ReserAction" method="queryByName">
+			<result name="success">searchList.jsp</result>
+		</action>
 		
 		<!-- Type -->
 		<action name="getType" class="com.ysk.controller.TypeAction" method="queryAllType">

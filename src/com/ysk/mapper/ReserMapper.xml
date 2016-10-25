@@ -25,4 +25,11 @@
   	select * from ysk_reservation where res_id = #{reserId}
   </select>
   
+  <select id="queryByName" parameterType="String" resultMap="reserMap">
+  	select * from ysk_reservation where res_name like '%#{reserName}%';
+  </select>
+  
+  <insert id="addReser" parameterType="com.ysk.vo.Reservation">
+  	insert into ysk_reservation(res_id,res_name,res_explain,res_price,res_num,res_typeid,res_state,res_address,res_starttime,res_endtime,res_realprice,res_picpath,res_telephone) values(seq_ysk_reservation.nextval,reser.res_name,reser.res_explain,reser.res_price,reser.res_num,reser.res_typeId,reser.res_state,reser.res_address,reser.res_startTime,reser.res_endTime,reser.res_realPrice,reser.res_picPath,reser.res_telephone);
+  </insert>
 </mapper>
