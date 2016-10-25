@@ -27,14 +27,14 @@
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/cssresets.css" media="all" />
-<!-- <link rel="stylesheet" href="css/normalize.css" media="all" />-->
 <link rel="stylesheet" href="css/util.css" media="all" />
 <link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css" />
 <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-<link rel="stylesheet" href="css/top-footer.css" media="all" />
 <link rel="stylesheet" href="css/index/index.css" media="all" />
+
+<link rel="stylesheet" href="css/top-footer.css" media="all" />
 </head>
 
 <body>

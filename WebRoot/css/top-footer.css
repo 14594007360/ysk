@@ -27,7 +27,6 @@ header nav div div ul li {
 	float: right;
 }
 
-/*µ¼º½span==|*/
 .sep-lines {
 	border-left: 1px solid #dfdfdf;
 }
@@ -37,6 +36,8 @@ header nav div div ul li {
 	position: absolute;
 	width: 80px;
 }
+
+
 
 @media screen and (max-width: 1300px) {
 	.flexible {
