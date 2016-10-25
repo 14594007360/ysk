@@ -32,4 +32,21 @@ public class ReserServiceImpl implements ReserService {
 		return reserDao.queryById(reserId);
 	}
 
+	/**
+	 * 根据名称获取预订信息
+	 * @param reserName
+	 * @return
+	 */
+	public List<Reservation> queryByName(String reserName){
+		
+		return reserDao.queryByName(reserName);
+	}
+
+	/**
+	 * 添加预订信息
+	 * @param reser
+	 */
+	public void addReser(Reservation reser){
+		reserDao.addReser(reser);
+	}
 }

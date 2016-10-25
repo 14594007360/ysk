@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysk.dao.TypeDao">
+  <resultMap type="Type" id="TypeMap">
+  	<id property="type_id" column="TYPE_ID" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+  	<result property="type_name" column="TYPE_NAME" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  
+  	<collection property="childs" column="TYPE_ID" select="com.ysk.dao.TypeChildDao.queryByTypeId"></collection>
+  </resultMap>
+  
+  <select id="queryAllType" resultMap="TypeMap">
+  	select * from ysk_type
+  </select>
+  
+  <select id="queryById" parameterType="int" resultMap="TypeMap">
+  	select * from ysk_type where type_id = #{typeId}
+  </select>
+  
+</mapper>

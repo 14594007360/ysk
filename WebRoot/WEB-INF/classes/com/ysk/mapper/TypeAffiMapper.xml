@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ysk.dao.TypeAffiDao">
+  <resultMap type="Type_Affiliated" id="affiMap">
+  	<id property="affi_id" column="AFFI_ID" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+  	<result property="affi_name" column="AFFI_NAME" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  	<result property="childtype_id" column="CHILDTYPE_ID" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+  
+<!--   	<association property="child" column="CHILDTYPE_ID" select="com.ysk.dao.TypeChildDao.queryById"></association> -->
+  </resultMap>
+  
+  <select id="queryAllAffi" resultMap="affiMap">
+  	select * from ysk_type_affiliated
+  </select>
+  
+  <select id="queryById" parameterType="int" resultMap="affiMap">
+  	select * from ysk_type_affiliated where affi_id = #{affiId}
+  </select>
+  
+  <select id="queryByChildId" parameterType="int" resultMap="affiMap">
+  	select * from ysk_type_affiliated where childtype_id = #{childId}
+  </select>
+</mapper>

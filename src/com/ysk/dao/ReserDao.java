@@ -16,4 +16,17 @@ public interface ReserDao {
 	 * @return
 	 */
 	public Reservation queryById(int reserId);
+	
+	/**
+	 * 根据名称获取预订信息
+	 * @param reserName
+	 * @return
+	 */
+	public List<Reservation> queryByName(String reserName);
+	
+	/**
+	 * 添加预订信息
+	 * @param reser
+	 */
+	public void addReser(Reservation reser);
 }

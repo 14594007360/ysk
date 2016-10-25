@@ -32,7 +32,28 @@
 <link rel="stylesheet" href="css/util.css" media="all" />
 <link rel="stylesheet" href="css/register/jq22.css" media="all" />
 <link rel="stylesheet" href="css/register/register.css">
-
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("input[name='getYZM']").click(function(){
+		var email = $("#email").val();
+		if(email==null||email==""){
+			alert("请输入邮箱");
+		}else{
+			alert("正在发送");
+			var args = {"email":email,"time":new Date()};
+			var url = "email_register";
+			$.post(url,args,function(data){
+				if(data==1){
+					alert("发送成功");
+				}else{
+					alert("发送失败，请重试！");
+				}
+			});
+		}
+	});
+});
+</script>
 </head>
 
 <body>
@@ -68,11 +89,11 @@
 			src="img/index/logo.png" class="logo"></a><span
 			class="sep-line pull-left"></span><span class="logo-zc">注册</span>
 	</div>
-	<form action="">
+	<form action="user_register.action" method="post">
 		<div class="regline clearfix">
 			<div class="reg">手机号码/邮箱：</div>
 			<div class="line">
-				<input type="text" class="inputElem" placeholder="请输入常用的手机号或邮箱"
+				<input type="text" name="registerUser.loginCode" class="inputElem" placeholder="请输入常用的手机号或邮箱"
 					id="email" />
 			</div>
 			<div class="alter-ok hide" id="alter-email-ok">
@@ -86,16 +107,16 @@
 		<div class="regline clearfix">
 			<div class="reg">验证码：</div>
 			<div class="code">
-				<input type="text" placeholder="请输入4位验证码" id="code" />
+				<input type="text" placeholder="请输入4位验证码" name="code" />
 			</div>
 			<div class="getcode">
-				<input type="button" value="获取验证码">
+				<input type="button" name="getYZM" value="获取验证码">
 			</div>
 		</div>
 		<div class="regline clearfix">
 			<div class="reg">密码：</div>
 			<div class="line">
-				<input type="password" placeholder="密码区分大小写" id="password" />
+				<input type="password" placeholder="密码区分大小写" name="registerUser.password" />
 			</div>
 			<div class="alter-ok hide" id="alter-password-ok">
 				<i class="icon-ok"></i>
@@ -106,7 +127,7 @@
 		</div>
 		<div class="regline clearfix btn-sub">
 			<div class="btn-submit">
-				<input type="button" value="注 册" id="btnsubmit">
+				<input type="submit" value="注 册" id="btnsubmit">
 			</div>
 		</div>
 		<div class="regline-text">
