@@ -32,5 +32,9 @@
 		         <param name="inputName">inputStream</param>
 			</result>
 		</action>
+		<action name="user_*" class="com.ysk.controller.UserAction" method="{1}">
+			<result name="success">index.jsp</result>
+			<result name="uregister" type="redirect">register.jsp</result>
+		</action>
 	</package>
 </struts>    

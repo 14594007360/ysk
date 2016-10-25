@@ -89,11 +89,11 @@ $(function(){
 			src="img/index/logo.png" class="logo"></a><span
 			class="sep-line pull-left"></span><span class="logo-zc">注册</span>
 	</div>
-	<form action="">
+	<form action="user_register.action" method="post">
 		<div class="regline clearfix">
 			<div class="reg">手机号码/邮箱：</div>
 			<div class="line">
-				<input type="text" name="email" class="inputElem" placeholder="请输入常用的手机号或邮箱"
+				<input type="text" name="registerUser.loginCode" class="inputElem" placeholder="请输入常用的手机号或邮箱"
 					id="email" />
 			</div>
 			<div class="alter-ok hide" id="alter-email-ok">
@@ -107,7 +107,7 @@ $(function(){
 		<div class="regline clearfix">
 			<div class="reg">验证码：</div>
 			<div class="code">
-				<input type="text" placeholder="请输入4位验证码" id="code" />
+				<input type="text" placeholder="请输入4位验证码" name="code" />
 			</div>
 			<div class="getcode">
 				<input type="button" name="getYZM" value="获取验证码">
@@ -116,7 +116,7 @@ $(function(){
 		<div class="regline clearfix">
 			<div class="reg">密码：</div>
 			<div class="line">
-				<input type="password" placeholder="密码区分大小写" id="password" />
+				<input type="password" placeholder="密码区分大小写" name="registerUser.password" />
 			</div>
 			<div class="alter-ok hide" id="alter-password-ok">
 				<i class="icon-ok"></i>
@@ -127,7 +127,7 @@ $(function(){
 		</div>
 		<div class="regline clearfix btn-sub">
 			<div class="btn-submit">
-				<input type="button" value="注 册" id="btnsubmit">
+				<input type="submit" value="注 册" id="btnsubmit">
 			</div>
 		</div>
 		<div class="regline-text">
