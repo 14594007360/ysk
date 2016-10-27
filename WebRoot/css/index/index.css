@@ -142,8 +142,10 @@
 /*×ó²àµ¼º½*/
 /**********************************************/
 .left-menu {
-	width: 15%;
+	width: 14.7%;
 	float: left;
+	z-index: 3;
+	position: relative;
 }
 
 .left-menu div {
@@ -201,8 +203,8 @@
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	overflow: hidden;
-	left: 14.8%;
-	z-index: 9;
+	left: 14.5%;
+	z-index: 2;
 	background: #fff;
 }
 

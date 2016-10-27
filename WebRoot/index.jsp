@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -35,6 +35,8 @@
 <link rel="stylesheet" href="css/index/index.css" media="all" />
 
 <link rel="stylesheet" href="css/top-footer.css" media="all" />
+<script type="text/javascript"
+	src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
 </head>
 
 <body>
@@ -111,110 +113,36 @@
 			<!-- 左侧导航 -->
 			<div class="left-menu clearfix pull-left">
 				<s:iterator value="%{typeList}" id="type" status="count">
-					<div class="men-food">
+					<div class="type-i<s:property value="%{#count.getIndex()}"/>">
 						<dl>
 							<dt>
-								<a href="#"><s:property value="%{#type.type_name}"/></a>
+								<a href="#"><s:property value="%{#type.type_name}" /></a>
 							</dt>
 							<dd class="sp-sc">
-								<a href="#"><s:property value="%{#type.childs[#count.getIndex()].affis[1].affi_name}"/></a>
+								<a href="#"><s:property
+										value="%{#type.childs[#count.getIndex()].affis[1].affi_name}" /></a>
 							</dd>
 							<dd class="sp-sc">
-								<a href="#"><s:property value="%{#type.childs[#count.getIndex()].affis[2].affi_name}"/></a>
+								<a href="#"><s:property
+										value="%{#type.childs[#count.getIndex()].affis[2].affi_name}" /></a>
 							</dd>
 						</dl>
 					</div>
 				</s:iterator>
-<!-- 				<div class="men-film"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">电影</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">在线定座</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">电影票团购</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
-<!-- 				<div class="men-entertainment"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">休闲娱乐</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">足疗按摩</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
-<!-- 				<div class="men-life"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">生活服务</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">配镜</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">鲜花</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
-<!-- 				<div class="men-hotel"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">酒店</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">赣州</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">北京</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">上海</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
-<!-- 				<div class="men-local-life"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">本地生活</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">温泉洗浴</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
-<!-- 				<div class="men-goodpeople"> -->
-<!-- 					<dl> -->
-<!-- 						<dt> -->
-<!-- 							<a href="#">丽人</a> -->
-<!-- 						</dt> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">美发</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">化妆</a> -->
-<!-- 						</dd> -->
-<!-- 						<dd class="sp-sc"> -->
-<!-- 							<a href="#">美容SPA</a> -->
-<!-- 						</dd> -->
-<!-- 					</dl> -->
-<!-- 				</div> -->
 			</div>
 
 			<!-- 分类 -->
-			
+
 			<s:iterator value="%{typeList}" id="type" status="count">
-				<div class="pull-left hd-type">
+				<div class="pull-left hd-type hide" id="type-item<s:property value="%{#count.getIndex()}"/>">
 					<div class="foot-item">
 						<s:iterator value="%{#type.childs}" id="child">
 							<ul class="clearfix">
-								<h3><s:property value="%{#child.child_name}"/></h3>
+								<h3>
+									<s:property value="%{#child.child_name}" />
+								</h3>
 								<s:iterator value="%{#child.affis}" id="affi">
-									<li><a href="#"><s:property value="%{#affi.affi_name}"/></a></li>
+									<li><a href="#"><s:property value="%{#affi.affi_name}" /></a></li>
 									<li><span class="sep-lines"></span></li>
 								</s:iterator>
 							</ul>
@@ -223,59 +151,7 @@
 					</div>
 				</div>
 			</s:iterator>
-						
-<!-- 						<li><a href="#">小吃快餐</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">自助餐</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">海鲜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">烧烤/烤肉</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">甜品</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">蛋糕</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">咖啡</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">夏日饮品</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">小龙虾</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">酒吧</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">粥店</a></li> -->
-					
-<!-- 					<h3>中国菜</h3> -->
-<!-- 					<ul class="clearfix"> -->
-<!-- 						<li><a href="#">粤菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">江浙菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">北京菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">东北菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">云贵菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">素食</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">创意菜/私房菜</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">烤鱼</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">烤鸭</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">麻辣烫</a></li> -->
-<!-- 					</ul> -->
-<!-- 					<hr /> -->
-<!-- 					<h3>外国菜</h3> -->
-<!-- 					<ul class="clearfix"> -->
-<!-- 						<li><a href="#">日韩料理</a></li> -->
-<!-- 						<li><span class="sep-lines"></span></li> -->
-<!-- 						<li><a href="#">西餐</a></li> -->
-<!-- 					</ul> -->
-			
+
 			<!-- 轮播广告 -->
 			<div class="ad">
 				<div class="owl-carousel owl-theme">
@@ -764,6 +640,17 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/tipso.min.js"></script>
 	<script src="js/index.js" charset="utf-8"></script>
-
+	<script type="text/javascript">
+		$youziku.load("#id1,.class1,h1", "5278cde221934793b53f1c3c8ec85f66",
+				"MicrosoftJhengHei");
+		/*$youziku.load("#id1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*$youziku.load("#id2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*$youziku.load(".class1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*$youziku.load(".class2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*$youziku.load("h1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*$youziku.load("h2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
+		/*．．．*/
+		$youziku.draw();
+	</script>
 </body>
 </html>
