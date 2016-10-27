@@ -64,6 +64,21 @@ public class UserAction extends ActionSupport implements SessionAware{
 	}
 	
 	/**
+	 *找回密码 
+	 */
+	public String updatePass(){
+		String sessionCode = (String) session.get("registerYZM");
+		if(sessionCode.equals(code)){
+			//此处修改密码操作
+			//updateUser.
+			session.put("user", registerUser);
+			return SUCCESS;
+		}else{
+			return "uregister";
+		}
+	}
+	
+	/**
 	 * 注册用户
 	 * @param updateUser
 	 */

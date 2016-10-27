@@ -41,12 +41,15 @@ $(function(){
 			alert("请输入邮箱/手机");
 		}else{
 			alert("正在发送");
-			var args = {"email":email,"type":false,"time":new Date()};
+			var args = {"email":email,"type":true,"time":new Date()};
 			var url = "email_register";
 			$.post(url,args,function(data){
 				if(data==1){
 					alert("发送成功");
-				}else{
+				}else if(data == 2){
+					alert("用户名不存在！")
+				}
+					else{
 					alert("发送失败，请重试！");
 				}
 			});
@@ -67,7 +70,7 @@ $(function(){
 		<div class="top-left">
 			<a href="#" class="pull-left logo-a"><img alt="ysklogp logo"
 				src="img/index/logo.png" class="logo"></a><span
-				class="sep-line pull-left"></span><span class="logo-zc">注册</span>
+				class="sep-line pull-left"></span><span class="logo-zc">找回密码</span>
 		</div>
 		<div class="top-right">
 			<ul class="clearfix">
@@ -87,13 +90,13 @@ $(function(){
 	<div class="centent-logo">
 		<a href="#" class="pull-left logo-a"><img alt="ysklogp logo"
 			src="img/index/logo.png" class="logo"></a><span
-			class="sep-line pull-left"></span><span class="logo-zc">注册</span>
+			class="sep-line pull-left"></span><span class="logo-zc">找回密码</span>
 	</div>
-	<form action="user_register.action" method="post">
+	<form action="user_updatePass.action" method="post">
 		<div class="regline clearfix">
 			<div class="reg">手机号码/邮箱：</div>
 			<div class="line">
-				<input type="text" name="registerUser.loginCode" class="inputElem" placeholder="请输入常用的手机号或邮箱"
+				<input type="text" name="updateUser.loginCode" class="inputElem" placeholder="请输入手机号或邮箱"
 					id="email" />
 			</div>
 			<div class="alter-ok hide" id="alter-email-ok">
@@ -116,7 +119,7 @@ $(function(){
 		<div class="regline clearfix">
 			<div class="reg">密码：</div>
 			<div class="line">
-				<input type="password" placeholder="密码区分大小写" name="registerUser.password" />
+				<input type="password" placeholder="密码区分大小写" name="updateUser.password" />
 			</div>
 			<div class="alter-ok hide" id="alter-password-ok">
 				<i class="icon-ok"></i>
@@ -127,12 +130,10 @@ $(function(){
 		</div>
 		<div class="regline clearfix btn-sub">
 			<div class="btn-submit">
-				<input type="submit" value="注 册" id="btnsubmit">
+				<input type="submit" value="修改密码" id="btnsubmit">
 			</div>
 		</div>
-		<div class="regline-text">
-			<a href="#">已有账号，直接登录</a>
-		</div>
+		
 
 	</form>
 	</section>
