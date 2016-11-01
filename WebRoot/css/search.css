@@ -1,0 +1,185 @@
+﻿/*找到某某相关的大div*/
+.filter-wrap {
+	margin: 0 auto;
+	width: 1100px; /*可能会改宽度*/
+	margin-bottom: 2rem;
+}
+
+.w-search-info {
+	/*width:1190px;*/
+	position: relative;
+	top: 14px;
+	height: 48px;
+	line-height: 48px;
+	margin-bottom: 28px;
+	padding-left: 18px;
+	border: 1px solid #f3e9c0;
+	background-color: #fffae9;
+	font-family: "microsoft yahei", "宋体";
+	font-size: 14px;
+	color: #666;
+	/*margin: 0 auto;居中，可能要换地方*/
+}
+
+.w-search-info .lineheight {
+	color: #fe5e88;
+	padding: 0 3px;
+}
+/*结束*/
+
+/*分类地区大div*/
+.w-filter {
+	border: 1px solid #f0f0f0;
+	border-bottom-color: #d8d8d8;
+	background-color: #fff;
+	font-size: 12px;
+	padding: 0 25px 17px 0;
+	zoom: 1;
+}
+
+.filter-section { /*分类一条的大div*/
+	position: relative;
+	padding-left: 70px;
+	margin-top: 15px;
+	zoom: 1;
+	line-height: 1.5;
+}
+
+.filter-section .filter-list a:hover {
+	color: red;
+}
+
+.label {
+	position: absolute;
+	left: 20px;
+	top: 1px;
+	font-size: 16px;
+	/*font-weight: 400;*/
+}
+
+.filter-list {
+	position: relative;
+	padding-right: 25px;
+}
+
+.filter-item-wrap { /**/
+	position: relative;
+	top: -2px;
+}
+
+.item-text {
+	background-color: #ff5c89;
+	color: #fff;
+	cursor: default;
+	font-size: 14px;
+}
+
+.item-list {
+	display: inline-block;
+	padding: 0 5px;
+	margin: 5px 10px 0 0;
+	height: 20px;
+	line-height: 20px;
+	font-family: "宋体";
+}
+
+a {
+	text-decoration: none;
+}
+/*默认 XXXXXX样式*/
+.w-bar {
+	margin: 21px 0;
+	background-color: #f5f5f5;
+	border: 1px solid #dfdfdf;
+	height: 43px;
+}
+
+.w-bar .sotr a:hover {
+	color: #ff5c89;
+}
+/*.w-bar i:hover{
+					color: #FF5C89;
+				}*/
+.w-bar .active {
+	border-right: 1px solid #DFDFDF;
+	border-left: 1px solid #DFDFDF;
+	color: #ff4833;
+	background: #fff;
+	cursor: default;
+}
+
+.bar-area {
+	position: relative;
+	font-size: 12px;
+}
+
+.sotr {
+	margin-right: 14px;
+}
+
+.sotr a {
+	padding: 9px 21px 10px;
+	height: 24px;
+	line-height: 22px;
+	display: inline-block;
+}
+
+.sotr .icon {
+	margin-left: 2px;
+	font-size: 12px;
+	color: #999;
+}
+/*.icon:after{
+				font-family: iconfont !important;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing:grayscale;
+			}*/
+.checkbox {
+	height: 20px;
+	line-height: 20px;
+}
+
+.checkbox .checkbox-item {
+	position: relative;
+	color: #666;
+	padding-left: 20px;
+	margin-left: 10px;
+	display: inline-block;
+	height: 20px;
+}
+
+.checkbox-item input {
+	line-height: 20px;
+	position: relative;
+	top: 2px;
+}
+
+/*分页*/
+.ye {
+	/*display: inline-block;*/
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	color: green;
+	/*background-color: #09f;*/
+	float: right;
+	position: relative;
+	top: -30px;
+	left: -10px;
+}
+
+@media screen and (max-width: 1100px) {
+	.filter-wrap {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.checkbox {
+		display: none;
+	}
+	.ye {
+		display: none;
+	}
+}

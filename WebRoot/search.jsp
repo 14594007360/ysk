@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -28,15 +28,10 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/cssresets.css" media="all" />
 <link rel="stylesheet" href="css/util.css" media="all" />
-<link rel="stylesheet" href="css/tipso.css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css" />
-<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 <link rel="stylesheet" href="css/index/index.css" media="all" />
-
+<link rel="stylesheet" href="css/search.css" />
 <link rel="stylesheet" href="css/top-footer.css" media="all" />
-<script type="text/javascript"
-	src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
 </head>
 
 <body>
@@ -110,175 +105,93 @@
 					<li>美食</li>
 				</ul>
 			</nav>
-			<!-- 左侧导航 -->
-			<div class="left-menu clearfix pull-left">
-				<s:iterator value="%{typeList}" id="type" status="count">
-					<div class="type-i<s:property value="%{#count.getIndex()}"/>">
-						<dl>
-							<dt>
-								<a href="#"><s:property value="%{#type.type_name}" /></a>
-							</dt>
-							<dd class="sp-sc">
-								<a href="#"><s:property
-										value="%{#type.childs[#count.getIndex()].affis[1].affi_name}" /></a>
-							</dd>
-							<dd class="sp-sc">
-								<a href="#"><s:property
-										value="%{#type.childs[#count.getIndex()].affis[2].affi_name}" /></a>
-							</dd>
-						</dl>
+		
+<!----------------->
+		<div class="filter-wrap">
+					<p class="w-search-info"><!--文字-->
+						找到<span class="lineheight">XXX</span>相关团购<span class="lineheight">XXX</span>个。
+					</p>
+					<div class="w-filter "><!--分类-->
+						<div class="filter-section">
+							<h5 class="label">分类:</h5>
+							<div class="filter-list"><!--分类后的整个的div-->
+								<div class="filter-item-wrap">
+									<a class="item-text item-list" href="#">全部</a>
+									<a class="item-list" href="#">美食</a><!--文字后面有-->
+									<a class="item-list" href="#">生活服务</a>
+									<a class="item-list" href="#">休闲娱乐</a>
+								</div>
+							</div>
+						</div>
+							<!--------------->
+						<div class="filter-section">
+							<h5 class="label">分类:</h5>
+							<div class="filter-list"><!--分类后的整个的div-->
+								<div class="filter-item-wrap">
+									<a class="item-text item-list" href="#">全部</a>
+									<a class="item-list" href="#">美食</a><!--文字后面有-->
+									<a class="item-list" href="#">生活服务</a>
+									<a class="item-list" href="#">休闲娱乐</a>
+									<a class="item-list" href="#">生活服务</a>
+									<a class="item-list" href="#">休闲娱乐</a>
+									<a class="item-list" href="#">生活服务</a>
+									<a class="item-list" href="#">休闲娱乐</a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</s:iterator>
-			</div>
-
-			<!-- 分类 -->
-
-			<s:iterator value="%{typeList}" id="type" status="count">
-				<div class="pull-left hd-type hide" id="type-item<s:property value="%{#count.getIndex()}"/>">
-					<div class="foot-item">
-						<s:iterator value="%{#type.childs}" id="child">
-							<ul class="clearfix">
-								<h3>
-									<s:property value="%{#child.child_name}" />
-								</h3>
-								<s:iterator value="%{#child.affis}" id="affi">
-									<li><a href="#"><s:property value="%{#affi.affi_name}" /></a></li>
-									<li><span class="sep-lines"></span></li>
-								</s:iterator>
-							</ul>
-							<hr />
-						</s:iterator>
+					
+					
+			<!-----默认分类部分----->
+				<div class="w-bar">
+					<div class="bar-area ">
+						<span class="sotr">
+							<a href="#" class="active">默认</a>
+							<!--<a class="sort-default sort-default-active" href="javascript:;" rel="nofollow" mon="element=default">默认</a>-->
+							<a href="#">
+								销量<i class="icon icon-arrow-down"></i>
+							</a>
+							<a href="#">
+								价格<i class="icon icon-sort"></i>
+							</a>
+							<a href="#">
+								折扣<i class="icon icon-arrow-up"></i>
+							</a>
+							<a href="#">
+								最新发布<i class="icon icon-arrow-up"></i>
+							</a>
+						</span>
+						
+						<!--复选框-->
+						<span class="checkbox">
+							<a class="checkbox-item" href="#">
+								<span class="filter-checkbox-box"></span>
+								<input type="checkbox">免预约
+							</a>
+							<a class="checkbox-item" href="#">
+								<span class="filter-checkbox-box"></span>
+								<input type="checkbox">全网低价
+							</a>
+							
+							<a class="checkbox-item" href="#">
+								<span class="filter-checkbox-box"></span>
+								<input type="checkbox">精选品牌
+							</a>
+						</span>
 					</div>
+						
+						<!--f页-->
+						<span class="ye">
+							<span class=" icon-angle-left"></span>
+							1/1
+							<span class="icon-angle-right"></span>
+						</span>
+						
+						
 				</div>
-			</s:iterator>
-
-			<!-- 轮播广告 -->
-			<div class="ad">
-				<div class="owl-carousel owl-theme">
-					<div class="item">
-						<picture> <!-- <source srcset="img/index/001.jpg" media="(min-width:50em)">
-						<source srcset="img/index/001.jpg" media="(min-width:30em)"> --> <img
-							src="img/index/003.jpg" alt="003" /> </picture>
-					</div>
-					<div class="item">
-						<picture> <!-- <source srcset="img/index/002.jpg" media="(min-width:50em)">
-						<source srcset="img/index/002.jpg" media="(min-width:30em)"> --> <img
-							src="img/index/002.jpg" alt="002" /> </picture>
-					</div>
-					<div class="item">
-						<picture> <!--<source srcset="img/index/003.jpg" media="(min-width:50em)">
-						<source srcset="img/index/003.jpg" media="(min-width:30em)"> --> <img
-							src="img/index/003.jpg" alt="003" /> </picture>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- dg -->
-		<section class="center-block clearfix dg">
-			<img src="img/index/recommend.png" class="timg center-block" />
-			<!--------------------------------------------------------------------------------------------------------------------------------->
-			<div class="Areafirstly">
-				<div class="Areaopen">
-					<!--第一块-->
-					<div class="i1">
-						<img src="img/index/nav3.jpg" />
-					</div>
-					<div class="i2 abi">
-						<img src="img/index/nav3.jpg" />
-					</div>
-				</div>
-				<!--第2块-->
-				<div class="Area">
-					<div class="i3">
-						<img src="img/index/nav3.jpg" />
-					</div>
-					<div class="i3 abi">
-						<img src="img/index/nav3.jpg" />
-					</div>
-				</div>
-				<!--第3块-->
-				<div>
-					<div class="i1">
-						<img src="img/index/nav3.jpg" />
-					</div>
-					<div class="i2 abi">
-						<img src="img/index/nav3.jpg" />
-					</div>
-				</div>
-				<!--第4块-->
-				<div>
-					<div class="i4">
-						<img src="img/index/nav3.jpg" />
-					</div>
-					<div class="i5 abi">
-						<img src="img/index/nav3.jpg" />
-					</div>
-				</div>
-				<!--第5块-->
-				<div class="Areaend pull-right">
-					<div>
-						<a>
-							<h3 class="ng-binding">一段描述</h3>
-							<p class="ng-binding">一段描述</p>
-						</a>
-					</div>
-					<div>
-						<a>
-							<h3 class="ng-binding">一段描述</h3>
-							<p class="ng-binding">一段描述</p>
-						</a>
-					</div>
-					<div>
-						<a>
-							<h3 class="ng-binding">一段描述</h3>
-							<p class="ng-binding">一段描述</p>
-						</a>
-					</div>
-					<div class="Areaend-end">
-						<a>
-							<h3 class="ng-binding">一段描述</h3>
-							<p class="ng-binding">一段描述</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- >800显示 -->
-		<section class="nav-l clearfix ">
-			<div class="food-l">
-				<div>
-					<i class="icon-food icon-2x"></i>
-					<div>美食</div>
-				</div>
-			</div>
-			<div class="live-l">
-				<div>
-					<i class="icon-beer icon-2x"></i>
-					<div class="">生活</div>
-				</div>
-			</div>
-			<div class="movie-l">
-				<div>
-					<i class="icon-facetime-video icon-2x"></i>
-					<div class="">电影</div>
-				</div>
-			</div>
-			<div class="recreation-l">
-				<div>
-					<i class="icon-coffee icon-2x"></i>
-					<div class="">娱乐</div>
-				</div>
-			</div>
-			<div class="grogshop-l">
-				<div>
-					<i class="icon-home icon-2x"></i>
-					<div class="">酒店</div>
-				</div>
-			</div>
-		</section>
-
+					
+					
+		
 
 		<!-- 内容 -->
 		<section class="center clearfix">
@@ -286,22 +199,7 @@
 			<!--美食 -->
 			<section class="cen-food clearfix">
 
-				<div class="clearfix">
-					<div class="title pull-left">
-						<i class="icon-food icon-2x"></i><span class="pull-right">美食</span>
-					</div>
-					<ul class="pull-right">
-						<li><a href="#">精选品牌</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">小吃快餐</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">蛋糕</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">其它美食</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
-					</ul>
-				</div>
+				
 
 				<div class="items clearfix">
 					<ul class="clearfix">
@@ -515,117 +413,10 @@
 
 			</section>
 
-			<!-- 电影 -->
-			<section class="clearfix">
-				<div>
-					<div class="title pull-left">
-						<i class="icon-facetime-video icon-2x"></i><span
-							class="pull-right">电影</span>
-					</div>
-					<ul class="pull-right">
-						<li><a href="#">在线订座</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">电影票团购</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">湄公河行动</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">幽灵医院</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
-					</ul>
-
-				</div>
-			</section>
-
-			<!-- 娱乐 -->
-			<section>
-				<div class="clearfix">
-					<div class="title pull-left">
-						<i class="icon-coffee icon-2x"></i><span class="pull-right">娱乐</span>
-					</div>
-					<ul class="pull-right">
-						<li><a href="#">密室逃脱</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">KTV</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">温泉洗浴</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">足疗按摩</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
-					</ul>
-
-				</div>
-			</section>
-
-			<!-- 生活 -->
-			<section>
-				<div class="clearfix">
-					<div class="title pull-left">
-						<i class="icon-beer icon-2x"></i><span class="pull-right">生活</span>
-					</div>
-					<ul class="pull-right">
-						<li><a href="#">配镜</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">鲜花</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">照片冲印</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">宠物服务</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
-					</ul>
-
-				</div>
-			</section>
-
-			<!-- 酒店 -->
-			<section>
-				<div class="clearfix">
-					<div class="title pull-left">
-						<i class="icon-home icon-2x"></i><span class="pull-right">酒店</span>
-					</div>
-					<ul class="pull-right">
-						<li><a href="#">配镜</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">鲜花</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">照片冲印</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">宠物服务</a></li>
-						<li><span class="sep-lines"></span></li>
-						<li><a href="#">全部</a> <i class=" icon-angle-right"></i></li>
-					</ul>
-
-				</div>
-			</section>
-
-		</section>
-
-		<!-- 底部社区 -->
-		<div class="community">
-			<div class="ysq">
-				<img src="img/index/ysq.png" class="center-block" />
-			</div>
-
-			<div class="clearfix">
-				<div>
-					<ul class="footcommunity">
-						<li><img src="img/index/fot4.jpg" /><img
-							src="img/index/fot4-l.jpg" /></li>
-						<li><img src="img/index/fot2.jpg" /><img
-							src="img/index/fot2-l.jpg" /></li>
-						<li><img src="img/index/fot3.jpg" /><img
-							src="img/index/fot3-l.jpg" /></li>
-						<li><img src="img/index/fot1.jpg" /><img
-							src="img/index/fot1-l.jpg" /></li>
-					</ul>
-				</div>
-			</div>
-
+		
 		</div>
 	</div>
-
+</div>
 
 	<!-----------底部------------------------>
 	<footer class="foot">
@@ -637,21 +428,7 @@
 
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/tipso.min.js"></script>
 	<script src="js/top-nav.js" charset="utf-8"></script>
-	<script src="js/index.js" charset="utf-8"></script>
-	<script type="text/javascript">
-		$youziku.load("#id1,.class1,h1", "5278cde221934793b53f1c3c8ec85f66",
-				"MicrosoftJhengHei");
-		/*$youziku.load("#id1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*$youziku.load("#id2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*$youziku.load(".class1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*$youziku.load(".class2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*$youziku.load("h1", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*$youziku.load("h2", "5278cde221934793b53f1c3c8ec85f66", "MicrosoftJhengHei");*/
-		/*．．．*/
-		$youziku.draw();
-	</script>
+
 </body>
 </html>
